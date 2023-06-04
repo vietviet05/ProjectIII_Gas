@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/oneshot_read")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/node_1")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,6 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/esp/adc_prj/oneshot_read/build/esp-idf/newlib/port/cmake_install.cmake")
+  include("D:/esp/DATK/node_1/build/esp-idf/newlib/port/cmake_install.cmake")
 endif()
 

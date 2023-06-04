@@ -6,7 +6,7 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: oneshot_read
+# Project: node_1
 # Configurations: 
 # =============================================================================
 # =============================================================================
@@ -14,7 +14,7 @@
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER__oneshot_read.2eelf_
+rule C_COMPILER__node_1.2eelf_
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\etc\Espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -24,7 +24,7 @@ rule C_COMPILER__oneshot_read.2eelf_
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__oneshot_read.2eelf_
+rule CXX_EXECUTABLE_LINKER__node_1.2eelf_
   command = cmd.exe /C "$PRE_LINK && D:\etc\Espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe $FLAGS $LINK_FLAGS @$RSP_FILE -o $TARGET_FILE  && $POST_BUILD"
   description = Linking CXX executable $TARGET_FILE
   rspfile = $RSP_FILE
@@ -1324,7 +1324,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_main_
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = D:\etc\Espressif\tools\cmake\3.24.0\bin\cmake.exe --regenerate-during-build -SD:\esp\adc_prj\oneshot_read -BD:\esp\adc_prj\oneshot_read\build
+  command = D:\etc\Espressif\tools\cmake\3.24.0\bin\cmake.exe --regenerate-during-build -SD:\esp\DATK\node_1 -BD:\esp\DATK\node_1\build
   description = Re-running CMake...
   generator = 1
 

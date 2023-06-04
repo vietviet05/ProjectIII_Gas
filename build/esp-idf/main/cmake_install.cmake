@@ -1,8 +1,8 @@
-# Install script for directory: D:/esp/adc_prj/oneshot_read/main
+# Install script for directory: D:/esp/DATK/node_1/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/oneshot_read")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/node_1")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

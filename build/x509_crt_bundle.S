@@ -1,4 +1,4 @@
-/* * Data converted from D:/esp/adc_prj/oneshot_read/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from D:/esp/DATK/node_1/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded
